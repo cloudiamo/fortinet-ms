@@ -1,0 +1,339 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>0</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>cli</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>Firewall Address</name>
+    <group>SASE</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+    <directoryNames>
+      <directoryName>SASE</directoryName>
+    </directoryNames>
+  </information>
+  <variables frozen="0">
+    <variable displayName="Address Name" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="UUID" name="params.uuid" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="IP Mask" name="params.ip_mask" startIncrement="0" type="IpMask" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="130" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="color" name="params.color" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="allow_routing" name="params.allow_routing" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Subnet IP" name="params.subnet_ip" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="130" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="subnet_mask" name="params.subnet_mask" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="255.255.255.255" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="type" name="params.type" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="visibility" name="params.visibility" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="comment" name="params.comment" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="associated_interface" name="params.associated_interface" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>config firewall address
+    edit &quot;none&quot;
+        set uuid 43c5826c-d3ad-51e9-f5a6-908779ee32d5
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 0.0.0.0 255.255.255.255
+    next
+    edit &quot;login.microsoftonline.com&quot;
+        set uuid 43c58758-d3ad-51e9-ad57-72829345c53d
+        set type fqdn
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set fqdn &quot;login.microsoftonline.com&quot;
+        set cache-ttl 0
+    next
+    edit &quot;login.microsoft.com&quot;
+        set uuid 43c58aa0-d3ad-51e9-3b9a-2e412899b883
+        set type fqdn
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set fqdn &quot;login.microsoft.com&quot;
+        set cache-ttl 0
+    next
+    edit &quot;login.windows.net&quot;
+        set uuid 43c58d20-d3ad-51e9-aeb3-b345a1f66125
+        set type fqdn
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set fqdn &quot;login.windows.net&quot;
+        set cache-ttl 0
+    next
+    edit &quot;gmail.com&quot;
+        set uuid 43c58f78-d3ad-51e9-86a0-8333fac71987
+        set type fqdn
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set fqdn &quot;gmail.com&quot;
+        set cache-ttl 0
+    next
+    edit &quot;wildcard.google.com&quot;
+        set uuid 43c591c6-d3ad-51e9-a269-d03b950707f1
+        set type wildcard-fqdn
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set wildcard-fqdn &quot;*.google.com&quot;
+    next
+    edit &quot;wildcard.dropbox.com&quot;
+        set uuid 43c593f6-d3ad-51e9-101b-4ece87591a33
+        set type wildcard-fqdn
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set wildcard-fqdn &quot;*.dropbox.com&quot;
+    next
+    edit &quot;all&quot;
+        set uuid 43ca506c-d3ad-51e9-af7c-85a6f5af2e4e
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 0.0.0.0 0.0.0.0
+    next
+    edit &quot;FIREWALL_AUTH_PORTAL_ADDRESS&quot;
+        set uuid 43ca51c0-d3ad-51e9-1fa3-92e14b2ca4aa
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility disable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 0.0.0.0 0.0.0.0
+    next
+    edit &quot;FABRIC_DEVICE&quot;
+        set uuid 43ca52b0-d3ad-51e9-acd4-d0ab8b8dbe79
+        set type ipmask
+        set comment &quot;IPv4 addresses of Fabric Devices.&quot;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 0.0.0.0 0.0.0.0
+    next
+    edit &quot;SSLVPN_TUNNEL_ADDR1&quot;
+        set uuid 43cab714-d3ad-51e9-2a12-832500fe3665
+        set type iprange
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &quot;ssl.root&quot;
+        set color 0
+        set start-ip 10.212.134.200
+        set end-ip 10.212.134.210
+    next
+    edit &quot;10.10.1.1&quot;
+        set uuid b543fe40-e52e-51ee-48f2-8a67525f116f
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 10.10.1.1 255.255.255.255
+    next
+    edit &quot;10.10.11.2&quot;
+        set uuid f5be6e4c-e52e-51ee-2be7-5e4f86aaa3c4
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 10.10.11.2 255.255.255.255
+    next
+    edit &quot;host12&quot;
+        set uuid 2903188c-e54a-51ee-c8f7-f68601accde2
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 10.101.12.12 255.255.255.255
+    next
+    edit &quot;DEM-UBI-IOSv-3[10.30.19.152][CE]&quot;
+        set uuid 154b4c30-f740-51ee-79fe-8ae2ffd3c5a5
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 10.30.19.152 255.255.255.255
+    next
+    edit &quot;Router_001&quot;
+        set uuid 7716ab4e-f740-51ee-13b3-2021cdb6692f
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 10.30.18.191 255.255.255.255
+    next
+    edit &quot;10.30.19.21&quot;
+        set uuid 9a78b2ec-f83c-51ee-7349-4d8c6778ba16
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 10.30.18.0 255.255.254.0
+    next
+    edit &quot;127.0.0.1_32&quot;
+        set uuid 9b02e2a0-f83c-51ee-f0c8-666e6ef52d77
+        set type ipmask
+        set comment &quot;testbackupMSA-14560&quot;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 127.0.0.1 255.255.255.255
+    next
+    edit &quot;grenoble_server[10.31.1.84]&quot;
+        set uuid 79fde542-0240-51ef-e408-0f318f010c55
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 10.31.1.84 255.255.255.255
+    next
+    edit &quot;CGU_LAN&quot;
+        set uuid 260e02fe-a64c-51ef-fb0b-407bfe03c076
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 2.2.2.1 255.255.255.255
+    next
+    edit &quot;Lan_Install&quot;
+        set uuid 2697c566-a64c-51ef-eb5a-2f0512ba88d2
+        set type ipmask
+        set comment &apos;&apos;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 172.10.15.99 255.255.255.255
+    next
+    edit &quot;host25&quot;
+        set uuid ff1c9ac0-d8cd-51ef-8357-9861565b0204
+        set type ipmask
+        set comment &quot;hgu_25&quot;
+        set visibility enable
+        set associated-interface &apos;&apos;
+        set color 0
+        set allow-routing disable
+        set subnet 10.101.12.125 255.255.255.255
+    next
+end</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[config firewall address##show full-configuration##end]]></operation>
+    <parser>
+      <section>
+        <regexp>@edit &quot;(?&lt;object_id&gt;.*)&quot;@</regexp>
+      </section>
+      <lines>
+        <line>
+          <regexp>@set uuid (?&lt;uuid&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set type (?&lt;type&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set color (?&lt;color&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set allow-routing (?&lt;allow_routing&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set subnet (?&lt;subnet_ip&gt;\S+) (?&lt;subnet_mask&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set visibility (?&lt;visibility&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set comment &apos;(?&lt;comment&gt;[^&quot;]+)&apos;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set associated-interface &apos;(?&lt;associated_interface&gt;[^&quot;]+)&apos;  @@</regexp>
+          <xpath></xpath>
+        </line>
+        <ignore>
+          <regexp>@set@</regexp>
+        </ignore>
+      </lines>
+    </parser>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[config firewall address
+    edit "{$params.object_id}"
+        set subnet {$params.subnet_ip} {$params.subnet_mask}
+	next
+end]]></operation>
+  </command>
+  <command name="READ"/>
+  <command name="UPDATE">
+    <operation><![CDATA[config firewall address
+    edit "{$params.object_id}"
+        set subnet {$params.subnet_ip} {$params.subnet_mask}
+	next
+end]]></operation>
+  </command>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <operation><![CDATA[config firewall address
+    delete "{$params.object_id}"
+end]]></operation>
+  </command>
+  <command name="LIST"/>
+  <displayName>Firewall Address</displayName>
+  <order>0</order>
+</ObjectDefinition>

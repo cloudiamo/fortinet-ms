@@ -1,0 +1,289 @@
+<ObjectDefinition>
+  <information>
+    <icon>/images/eclipseIcons/page_obj.gif</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>7004</order>
+    <visibility>5</visibility>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>cli</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>15</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>IPsec Phase 1 Settings</name>
+    <group>SASE</group>
+    <importonce>false</importonce>
+    <importrank>1</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>true</sortascending>
+    <sortauto>true</sortauto>
+    <sortnumerical>true</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+    <directoryNames>
+      <directoryName>SASE</directoryName>
+    </directoryNames>
+  </information>
+  <variables frozen="0">
+    <variable displayName="Tunnel" name="params.object_id" startIncrement="1" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections/>
+    </variable>
+    <variable displayName="Interface" name="params.interface" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>Fortinet_show_interfaces</class>
+      </classes>
+    </variable>
+    <variable displayName="Local ID" name="params.local_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Remote Gateway" name="params.remote_gateway" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="6" increment="0" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" isCompositeKey="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections/>
+    </variable>
+    <variable displayName="Pre-Shared Key" name="params.psksecret_key" startIncrement="0" type="Password" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="7" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="IKE Version" name="params.ike_version" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="2" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="keylife" name="params.keylife" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="86400" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="net_device" name="params.net_device" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="disable" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Disable">disable</values>
+        <values displayValue="Enable">enable</values>
+      </values>
+    </variable>
+    <variable displayName="mode_cfg" name="params.mode_cfg" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="disable" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Disable">disable</values>
+        <values displayValue="Enable">enable</values>
+      </values>
+    </variable>
+    <variable displayName="peer_type" name="params.peer_type" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="any" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Optional Comment" name="params.comments" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="12" increment="0" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>   edit &quot;Tunnel1&quot;
+        set type static
+        set interface &quot;port1&quot;
+        set ip-version 4
+        set ike-version 2
+        set local-gw 0.0.0.0
+        set keylife 86400
+        set authmethod psk
+        unset authmethod-remote
+        set peertype any
+        set net-device disable
+        set passive-mode disable
+        set exchange-interface-ip disable
+        set aggregate-member disable
+        set mode-cfg disable
+        set proposal aes128-sha256 aes256-sha256 aes128-sha1 aes256-sha1
+        set localid &quot;toto&quot;
+        set localid-type auto
+        set auto-negotiate enable
+        set negotiate-timeout 30
+        set fragmentation enable
+        set ip-fragmentation post-encapsulation
+        set dpd on-demand
+        set forticlient-enforcement disable
+        set dhgrp 16 15 14
+        set suite-b disable
+        set eap disable
+        set ppk disable
+        set wizard-type custom
+        set reauth disable
+        set idle-timeout disable
+        set ha-sync-esp-seqno enable
+        set auto-discovery-sender disable
+        set auto-discovery-receiver disable
+        set auto-discovery-forwarder disable
+        set encapsulation none
+        set nattraversal enable
+        set fragmentation-mtu 1200
+        set childless-ike disable
+        set rekey enable
+        set fec-egress disable
+        set fec-ingress disable
+        set remote-gw 163.116.54.38
+		set network-overlay disable
+        set monitor &apos;&apos;
+        set tunnel-search selectors
+        set add-gw-route disable
+        set psksecret ENC cM2mwWZvuOe5ISadtMUOhaBcOltQHoner2/VHxxVi5M6aZQRrjDq5ewyz0dErn/LQkGj83/V4AGbpH192KSOh5EejfWf2Gi+9kYKnB6qmwV42CDeRuJrTuj4p98A5WUs12E67n17tZX5GCwzK9N0TLVaxorLNDWv8Uw8pKgTFTz6HdgY8qu5iTJSdlhkEDUvAMweJA==
+        set keepalive 10
+        set dpd-retrycount 3
+        set dpd-retryinterval 20
+    next
+end</content>
+  </example>
+  <command name="CREATE">
+    <operation><![CDATA[config vpn ipsec phase1-interface
+    edit Tunnel{$params.object_id}
+		set interface "{$params.interface}"       
+		set ike-version 2         
+		set keylife 86400         
+		set peertype any         
+		set net-device disable         
+		set mode-cfg disable         
+		set proposal aes128-sha256 aes256-sha256 aes128-sha1 aes256-sha1
+		set localid "{$params.local_id}" 
+		set dhgrp 16 15 14         
+		set remote-gw {$params.remote_gateway}
+		set psksecret {$params.psksecret_key}    
+	next 
+end]]></operation>
+  </command>
+  <command name="IMPORT">
+    <operation><![CDATA[show full-configuration vpn ipsec phase1-interface]]></operation>
+    <post_template></post_template>
+    <parser>
+      <section>
+        <regexp>@edit &quot;Tunnel(?&lt;object_id&gt;\d+)&quot;@</regexp>
+      </section>
+      <lines>
+        <line>
+          <array/>
+          <regexp>@set interface &quot;(?&lt;interface&gt;\S+)&quot;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array/>
+          <regexp>@set remote-gw (?&lt;remote_gateway&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array/>
+          <regexp>@set psksecret (?&lt;psksecret_key&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array/>
+          <regexp>@set comments &quot;(?&lt;comments&gt;[^&quot;]+)&quot;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set keylife (?&lt;keylife&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set peertype (?&lt;peer_type&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set mode-cfg (?&lt;mode_cfg&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set ike-version (?&lt;ike_version&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set localid &quot;(?&lt;local_id&gt;.*)&quot;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set net-device (?&lt;net_device&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <ignore>
+          <regexp>@config @</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@        set type static@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@ set @</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@unset@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@end$@</regexp>
+        </ignore>
+      </lines>
+    </parser>
+  </command>
+  <command name="UPDATE">
+    <operation><![CDATA[config vpn ipsec phase1-interface
+    edit Tunnel{$params.object_id}
+		set interface "{$params.interface}"       
+		set ike-version 2         
+		set keylife 86400         
+		set peertype any         
+		set net-device disable         
+		set mode-cfg disable         
+		set proposal aes128-sha256 aes256-sha256 aes128-sha1 aes256-sha1
+		set localid "{$params.local_id}" 
+		set dhgrp 16 15 14         
+		set remote-gw {$params.remote_gateway}
+		set psksecret {$params.psksecret_key}    
+	next 
+end
+]]></operation>
+  </command>
+  <command name="DELETE">
+    <operation><![CDATA[config vpn ipsec phase1-interface
+delete "Tunnel{$params.object_id}"
+end]]></operation>
+  </command>
+  <command name="CONSTRAINT">
+    <operation><![CDATA[{assign var=restrict value=['100.65.0.0'=>'255.255.0.0',
+'100.66.0.0'=>'255.254.0.0',
+'100.68.0.0'=>'255.252.0.0',
+'100.72.0.0'=>'255.252.0.0',
+'100.76.0.0'=>'255.254.0.0',
+'100.78.0.0'=>'255.255.0.0',
+'100.80.0.0'=>'255.248.0.0',
+'100.88.0.0'=>'255.254.0.0',
+'100.91.0.0'=>'255.255.0.0',
+'100.92.0.0'=>'255.252.0.0',
+'100.126.0.0'=>'255.254.0.0']}
+{if !empty($params.remote_gateway)}
+{foreach $restrict as $rest}
+{if is_in_network($params.remote_gateway, $rest@key, $rest)} Input restriction. Network {$rest@key} {$rest} not allowed.
+{break}
+{/if}
+{/foreach}
+{/if}
+{if count($params.vpn) > 9} Input restriction. You cannot configure more than 9 proposals.
+{/if}
+{if count($params.vpn2) > 3} Input restriction. You cannot configure more than 3 DH Group.
+{/if}
+{if count($params.sec) > 9} Input restriction. You cannot configure more than 9 proposals.
+{/if}
+{if count($params.sec2) > 3} Input restriction. You cannot configure more than 3 DH Group.
+{/if}
+{if mb_check_encoding($params.comments, 'ASCII') == false}INPUT RESTRICTION. Multibyte characters not allowed, invalid comment.
+{/if}
+{if strpos($params.comments, '$') !== false}INPUT RESTRICTION. Invalid comment.
+{/if}]]></operation>
+  </command>
+  <displayName>IPsec Phase 1 Settings</displayName>
+  <order>7004</order>
+</ObjectDefinition>

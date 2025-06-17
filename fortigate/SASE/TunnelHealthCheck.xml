@@ -1,0 +1,401 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>7007</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>cli</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>Tunnel Health Check</name>
+    <group>SASE</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+    <directoryNames>
+      <directoryName>SASE</directoryName>
+    </directoryNames>
+  </information>
+  <variables frozen="0">
+    <variable displayName="Name" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Addr Mode" name="params.addr_mode" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="ipv4" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Server IP Addr" name="params.server_ip" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Protocol" name="params.protocol" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="http" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Port" name="params.port" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Interval" name="params.interval" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="500" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="failtime" name="params.failtime" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="5" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="recoverytime" name="params.recoverytime" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="5" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="probe_packets" name="params.probe_packets" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="enable" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Enable">enable</values>
+        <values displayValue="Disable">disable</values>
+      </values>
+    </variable>
+    <variable displayName="HTTP Get" name="params.http_get" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="/" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="HTTP Agent" name="params.http_agent" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="Chrome/ Safari/" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="update_cascade_interface" name="params.update_cascade_interface" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="enable" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Enable">enable</values>
+        <values displayValue="Disable">disable</values>
+      </values>
+    </variable>
+    <variable displayName="Update Static Route" name="params.update_static_route" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="enable" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Enable">enable</values>
+        <values displayValue="Disable">disable</values>
+      </values>
+    </variable>
+    <variable displayName="sla_fail_log_period" name="params.sla_fail_log_period" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="sla_pass_log_period" name="params.sla_pass_log_period" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="threshold_warning_packetloss" name="params.threshold_warning_packetloss" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="0" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="threshold_alert_packetloss" name="params.threshold_alert_packetloss" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="0" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="threshold_warning_latency" name="params.threshold_warning_latency" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="0" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="threshold_alert_latency" name="params.threshold_alert_latency" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="threshold_warning_jitter" name="params.threshold_warning_jitter" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="0" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="threshold_alert_jitter" name="params.threshold_alert_jitter" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="0" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>    edit &quot;Default_Office_365&quot;
+        set probe-packets enable
+        set addr-mode ipv4
+        set server &quot;www.office.com&quot;
+        set protocol http
+        set port 80
+        set http-get &quot;/&quot;
+        set http-agent &quot;Chrome/ Safari/&quot;
+        set http-match &apos;&apos;
+        set interval 1000
+        set failtime 5
+        set recoverytime 10
+        set update-cascade-interface enable
+        set update-static-route enable
+        set sla-fail-log-period 0
+        set sla-pass-log-period 0
+        set threshold-warning-packetloss 0
+        set threshold-alert-packetloss 0
+        set threshold-warning-latency 0
+        set threshold-alert-latency 0
+        set threshold-warning-jitter 0
+        set threshold-alert-jitter 0
+        config sla
+            edit 1
+                set link-cost-factor latency jitter packet-loss
+                set latency-threshold 250
+                set jitter-threshold 50
+                set packetloss-threshold 5
+            next
+        end
+    next
+    edit &quot;Default_Gmail&quot;
+        set probe-packets enable
+        set addr-mode ipv4
+        set server &quot;gmail.com&quot;
+        set protocol ping
+        set interval 1000
+        set failtime 5
+        set recoverytime 10
+        set update-cascade-interface enable
+        set update-static-route enable
+        set sla-fail-log-period 0
+        set sla-pass-log-period 0
+        set threshold-warning-packetloss 0
+        set threshold-alert-packetloss 0
+        set threshold-warning-latency 0
+        set threshold-alert-latency 0
+        set threshold-warning-jitter 0
+        set threshold-alert-jitter 0
+        config sla
+            edit 1
+                set link-cost-factor latency jitter packet-loss
+                set latency-threshold 250
+                set jitter-threshold 50
+                set packetloss-threshold 2
+            next
+        end
+    next
+    edit &quot;Default_AWS&quot;
+        set probe-packets enable
+        set addr-mode ipv4
+        set server &quot;aws.amazon.com&quot;
+        set protocol http
+        set port 80
+        set http-get &quot;/&quot;
+        set http-agent &quot;Chrome/ Safari/&quot;
+        set http-match &apos;&apos;
+        set interval 1000
+        set failtime 5
+        set recoverytime 10
+        set update-cascade-interface enable
+        set update-static-route enable
+        set sla-fail-log-period 0
+        set sla-pass-log-period 0
+        set threshold-warning-packetloss 0
+        set threshold-alert-packetloss 0
+        set threshold-warning-latency 0
+        set threshold-alert-latency 0
+        set threshold-warning-jitter 0
+        set threshold-alert-jitter 0
+        config sla
+            edit 1
+                set link-cost-factor latency jitter packet-loss
+                set latency-threshold 250
+                set jitter-threshold 50
+                set packetloss-threshold 5
+            next
+        end
+    next
+    edit &quot;Default_Google Search&quot;
+        set probe-packets enable
+        set addr-mode ipv4
+        set server &quot;www.google.com&quot;
+        set protocol http
+        set port 80
+        set http-get &quot;/&quot;
+        set http-agent &quot;Chrome/ Safari/&quot;
+        set http-match &apos;&apos;
+        set interval 1000
+        set failtime 5
+        set recoverytime 10
+        set update-cascade-interface enable
+        set update-static-route enable
+        set sla-fail-log-period 0
+        set sla-pass-log-period 0
+        set threshold-warning-packetloss 0
+        set threshold-alert-packetloss 0
+        set threshold-warning-latency 0
+        set threshold-alert-latency 0
+        set threshold-warning-jitter 0
+        set threshold-alert-jitter 0
+        config sla
+            edit 1
+                set link-cost-factor latency jitter packet-loss
+                set latency-threshold 250
+                set jitter-threshold 50
+                set packetloss-threshold 5
+            next
+        end
+    next
+    edit &quot;Default_FortiGuard&quot;
+        set probe-packets enable
+        set addr-mode ipv4
+        set server &quot;fortiguard.com&quot;
+        set protocol http
+        set port 80
+        set http-get &quot;/&quot;
+        set http-agent &quot;Chrome/ Safari/&quot;
+        set http-match &apos;&apos;
+        set interval 1000
+        set failtime 5
+        set recoverytime 10
+        set update-cascade-interface enable
+        set update-static-route enable
+        set sla-fail-log-period 0
+        set sla-pass-log-period 0
+        set threshold-warning-packetloss 0
+        set threshold-alert-packetloss 0
+        set threshold-warning-latency 0
+        set threshold-alert-latency 0
+        set threshold-warning-jitter 0
+        set threshold-alert-jitter 0
+        config sla
+            edit 1
+                set link-cost-factor latency jitter packet-loss
+                set latency-threshold 250
+                set jitter-threshold 50
+                set packetloss-threshold 5
+            next
+        end
+    next
+    edit &quot;Netskope&quot;
+        set probe-packets enable
+        set addr-mode ipv4
+        set server &quot;10.163.6.216&quot;
+        set protocol http
+        set port 80
+        set http-get &quot;/&quot;
+        set http-agent &quot;Chrome/ Safari/&quot;
+        set http-match &apos;&apos;
+        set interval 500
+        set failtime 5
+        set recoverytime 5
+        set update-cascade-interface enable
+        set update-static-route enable
+        set sla-fail-log-period 0
+        set sla-pass-log-period 0
+        set threshold-warning-packetloss 0
+        set threshold-alert-packetloss 0
+        set threshold-warning-latency 0
+        set threshold-alert-latency 0
+        set threshold-warning-jitter 0
+        set threshold-alert-jitter 0
+    next
+</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[config system virtual-wan-link##show full-configuration health-check##end]]></operation>
+    <parser>
+      <section>
+        <regexp>@edit &quot;(?&lt;object_id&gt;.*)&quot;@</regexp>
+      </section>
+      <lines>
+        <line>
+          <regexp>@set probe-packets (?&lt;probe_packets&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set addr-mode (?&lt;addr_mode&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set server &quot;(?&lt;server_ip&gt;\S+)&quot;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set protocol (?&lt;protocol&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set port (?&lt;port&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set http-get &quot;(?&lt;http_get&gt;.*)&quot;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set http-agent &quot;(?&lt;http_agent&gt;[^&quot;]+)&quot;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set http-match &apos;(?&lt;http-match&gt;.*)&apos;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set interval (?&lt;interval&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set failtime (?&lt;failtime&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set recoverytime (?&lt;recoverytime&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set update-cascade-interface (?&lt;update_cascade_interface&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set update-static-route (?&lt;update_static_route&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set sla-fail-log-period (?&lt;sla_fail_log_period&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set sla-pass-log-period (?&lt;sla_pass_log_period&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set sla-pass-log-period (?&lt;sla_pass_log_period&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set threshold-warning-packetloss (?&lt;threshold_warning_packetloss&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set threshold-alert-packetloss (?&lt;threshold_alert_packetloss&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set threshold-warning-latency (?&lt;threshold_warning_latency&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set threshold-alert-latency (?&lt;threshold_alert_latency&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set threshold-warning-jitter (?&lt;threshold_warning_jitter&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set threshold-alert-jitter (?&lt;threshold_alert_jitter&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <ignore>
+          <regexp>@config@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@next$@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@end$@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@set@</regexp>
+        </ignore>
+      </lines>
+    </parser>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[config system virtual-wan-link
+ config health-check
+	edit "{$params.object_id}"
+        set probe-packets enable
+        set addr-mode {$params.addr_mode}
+        set server "{$params.server_ip}"
+        set protocol {$params.protocol}
+        set port {$params.port}
+        set http-get "{$params.http_get}"
+        set http-agent "{$params.http_agent}"
+        set http-match ''
+        set interval 500
+        set failtime 5
+        set recoverytime 5
+end]]></operation>
+  </command>
+  <command name="READ"/>
+  <command name="UPDATE">
+    <operation><![CDATA[config system virtual-wan-link
+ config health-check
+	edit "{$params.object_id}"
+        set probe-packets enable
+        set addr-mode {$params.addr_mode}
+        set server "{$params.server_ip}"
+        set protocol {$params.protocol}
+        set port {$params.port}
+        set http-get "{$params.http_get}"
+        set http-agent "{$params.http_agent}"
+        set http-match ''
+        set interval 500
+        set failtime 5
+        set recoverytime 5
+end]]></operation>
+  </command>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <operation><![CDATA[config system virtual-wan-link
+ config health-check
+	delete "{$params.object_id}"
+end]]></operation>
+  </command>
+  <command name="LIST"/>
+  <displayName>Tunnel Health Check</displayName>
+  <order>7007</order>
+</ObjectDefinition>

@@ -1,0 +1,160 @@
+<ObjectDefinition>
+  <information>
+    <icon>/images/eclipseIcons/page_obj.gif</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>7005</order>
+    <visibility>5</visibility>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>cli</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>IPsec Static Routing</name>
+    <group>SASE</group>
+    <importonce>false</importonce>
+    <importrank>1</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>true</sortascending>
+    <sortauto>true</sortauto>
+    <sortnumerical>true</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+    <directoryNames>
+      <directoryName>SASE</directoryName>
+    </directoryNames>
+  </information>
+  <variables frozen="0">
+    <variable displayName="ID" name="params.object_id" startIncrement="5001" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="20" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="interface" name="params.interface" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Destination IP" name="params.ip_dest" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="50" displayOrder="1" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="0.0.0.0" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Subnet Mask" name="params.mask" startIncrement="0" type="IpMask" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="50" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="0.0.0.0" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Priority" name="params.priority" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="10" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Optional Comments" name="params.comment" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="5" increment="0" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="gateway" name="params.gateway" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="dynamic_gateway" name="params.dynamic_gateway" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="virtual-wan-link" name="params.virtual-wan-link" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+  </variables>
+  <example>
+    <content>config router static
+ edit 1
+  set status enable
+  set dst 0.0.0.0 0.0.0.0
+  set gateway 10.31.1.251
+  set distance 1
+  set weight 0
+  set priority 0
+  set device &quot;port1&quot;
+  set comment &apos;&apos;
+  set blackhole disable
+  set dynamic-gateway disable
+  set virtual-wan-link disable
+  set dstaddr &apos;&apos;
+  unset internet-service
+  set internet-service-custom &apos;&apos;
+  set link-monitor-exempt disable
+  set bfd disable
+ next
+ edit 2
+  set status enable
+  set dst 192.168.1.0 255.255.255.0
+  set gateway 192.168.1.1
+  set distance 10
+  set weight 0
+  set priority 0
+  set device &quot;port1&quot;
+  set comment &quot;testbackupMSA-14560&quot;
+  set blackhole disable
+  set dynamic-gateway disable
+  set virtual-wan-link disable
+  set link-monitor-exempt disable
+  set bfd disable
+ next
+end</content>
+  </example>
+  <command name="CREATE">
+    <operation><![CDATA[config router static
+	edit {$params.object_id}
+		set priority 10
+		set device "{$params.interface}"
+	next 
+end
+]]></operation>
+  </command>
+  <command name="IMPORT">
+    <operation><![CDATA[show full-configuration router static]]></operation>
+    <parser>
+      <section>
+        <regexp>@edit (?&lt;object_id&gt;\d+)@</regexp>
+      </section>
+      <lines>
+        <line>
+          <array/>
+          <regexp>@set dst (?&lt;ip_dest&gt;\S+) (?&lt;mask&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array/>
+          <regexp>@set device &quot;(?&lt;interface&gt;.*)&quot;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array/>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array/>
+          <regexp>@set comment &quot;(?&lt;comment&gt;[^&quot;]+)&quot;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set priority (?&lt;priority&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set gateway (?&lt;gateway&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set dynamic-gateway  (?&lt;dynamic_gateway&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set virtual-wan-link (?&lt;virtual-wan-link&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <ignore>
+          <regexp>@set @</regexp>
+        </ignore>
+      </lines>
+    </parser>
+  </command>
+  <command name="UPDATE">
+    <operation><![CDATA[config router static
+	edit {$params.object_id}
+		set priority 10
+		set device "{$params.interface}"
+	next 
+end
+]]></operation>
+  </command>
+  <command name="DELETE">
+    <operation><![CDATA[config router static
+	delete "{$params.object_id}"
+end
+]]></operation>
+  </command>
+  <command name="CONSTRAINT">
+    <operation><![CDATA[{if mb_check_encoding($params.comment, 'ASCII') == false}INPUT RESTRICTION. Multibyte characters not allowed, invalid comment.
+{/if}
+{if strpos($params.comment, '$') !== false}INPUT RESTRICTION. Invalid comment.
+{/if}]]></operation>
+  </command>
+  <displayName>IPsec Static Routing</displayName>
+  <order>7005</order>
+</ObjectDefinition>

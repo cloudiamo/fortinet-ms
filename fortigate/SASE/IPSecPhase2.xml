@@ -1,0 +1,159 @@
+<ObjectDefinition>
+  <information>
+    <icon>/images/eclipseIcons/page_obj.gif</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>7000</order>
+    <visibility>3</visibility>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>cli</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>15</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>IPsec Phase 2 Settings</name>
+    <group>SASE</group>
+    <importonce>false</importonce>
+    <importrank>1</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>true</sortascending>
+    <sortauto>true</sortauto>
+    <sortnumerical>true</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+    <directoryNames>
+      <directoryName>SASE</directoryName>
+    </directoryNames>
+  </information>
+  <variables frozen="0">
+    <variable displayName="Name" name="params.object_id" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>IPSec_Setting</class>
+      </classes>
+    </variable>
+    <variable displayName="Key Life Seconds" name="params.keylifeseconds" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="7200" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="auto_negotiate" name="params.auto_negotiate" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="disable" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Enable">enable</values>
+        <values displayValue="Disable">disable</values>
+      </values>
+    </variable>
+  </variables>
+  <example>
+    <content>show full-configuration vpn ipsec phase2-interface
+config vpn ipsec phase2-interface
+ edit &quot;Tunnel1_phase2&quot;
+  set phase1name &quot;Tunnel1&quot;
+  set proposal 3des-md5
+  set pfs enable
+  set dhgrp 2
+  set replay enable
+  set keepalive enable
+  set auto-negotiate enable
+  set keylife-type seconds
+  set encapsulation tunnel-mode
+  set comments &apos;&apos;
+  set protocol 0
+  set src-addr-type subnet
+  set src-port 0
+  set dst-addr-type subnet
+  set dst-port 0
+  set keylifeseconds 43200
+  set src-subnet 0.0.0.0 0.0.0.0
+  set dst-subnet 0.0.0.0 0.0.0.0
+ next
+ edit &quot;Tunnel3_phase2&quot;
+  set phase1name &quot;Tunnel3&quot;
+  set proposal 3des-md5
+  set pfs enable
+  set dhgrp 14 5
+  set replay enable
+  set keepalive enable
+  set auto-negotiate enable
+  set keylife-type seconds
+  set encapsulation tunnel-mode
+  set comments &apos;&apos;
+  set protocol 0
+  set src-addr-type subnet
+  set src-port 0
+  set dst-addr-type subnet
+  set dst-port 0
+  set keylifeseconds 43200
+  set src-subnet 0.0.0.0 0.0.0.0
+  set dst-subnet 0.0.0.0 0.0.0.0
+ next
+end</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[show full-configuration vpn ipsec phase2-interface]]></operation>
+    <post_template></post_template>
+    <parser>
+      <section>
+        <regexp>@edit &quot;Tunnel(?&lt;object_id&gt;\d+)_phase2&quot;@</regexp>
+      </section>
+      <lines>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set keylifeseconds (?&lt;keylifeseconds&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set auto-negotiate (?&lt;auto_negotiate&gt;.*)@</regexp>
+          <xpath></xpath>
+        </line>
+        <ignore>
+          <regexp>@config @</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@ set@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@next$@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@end$@</regexp>
+        </ignore>
+      </lines>
+    </parser>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[config vpn ipsec phase2-interface     
+	edit "Tunnel{$params.object_id}_phase2"         
+		set phase1name "Tunnel{$params.object_id}"         
+		set proposal aes256gcm aes128gcm aes128-sha1 aes256-sha1         
+		set dhgrp 16 15 14         
+		set auto-negotiate enable         
+		set keylifeseconds 7200     
+	next 
+end]]></operation>
+  </command>
+  <command name="UPDATE">
+    <operation><![CDATA[config vpn ipsec phase2-interface     
+	edit "Tunnel{$params.object_id}_phase2"         
+		set phase1name "Tunnel{$params.object_id}"         
+		set proposal aes256gcm aes128gcm aes128-sha1 aes256-sha1         
+		set dhgrp 16 15 14         
+		set auto-negotiate enable         
+		set keylifeseconds 7200     
+	next 
+end]]></operation>
+  </command>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <operation><![CDATA[config vpn ipsec phase2-interface
+delete "Tunnel{$params.object_id}_phase2"
+end]]></operation>
+  </command>
+  <displayName>IPsec Phase 2 Settings</displayName>
+  <order>7000</order>
+</ObjectDefinition>

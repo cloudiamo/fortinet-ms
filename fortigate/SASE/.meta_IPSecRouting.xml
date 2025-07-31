@@ -10,20 +10,20 @@
             <value>CommandDefinition</value>
         </entry>
         <entry>
-            <key>MODEL</key>
-            <value>15102617</value>
+            <key>MANUFACTURER</key>
+            <value>17</value>
         </entry>
         <entry>
             <key>FILE_TYPE</key>
             <value>text</value>
         </entry>
         <entry>
-            <key>MANUFACTURER</key>
-            <value>17</value>
+            <key>MODEL</key>
+            <value>15102617</value>
         </entry>
         <entry>
             <key>DISPLAYNAME</key>
-            <value>IPSec_Routing.xml</value>
+            <value>IPSecRouting.xml</value>
         </entry>
     </map>
 </metadata>

@@ -29,58 +29,288 @@
     </directoryNames>
   </information>
   <variables frozen="0">
-    <variable displayName="ID" name="params.object_id" startIncrement="5001" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="20" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" isCompositeKey="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="interface" name="params.interface" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="Destination IP" name="params.ip_dest" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="50" displayOrder="1" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="0.0.0.0" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="Subnet Mask" name="params.mask" startIncrement="0" type="IpMask" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="50" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="0.0.0.0" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="Priority" name="params.priority" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="10" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="Optional Comments" name="params.comment" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="5" increment="0" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="gateway" name="params.gateway" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="dynamic_gateway" name="params.dynamic_gateway" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="virtual-wan-link" name="params.virtual-wan-link" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="ID" name="params.object_id" startIncrement="5001" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="20" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="true" isEditLocked="true" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Interface" name="params.interface" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>FortinetShowInterfaces</class>
+      </classes>
+    </variable>
+    <variable displayName="Destination IP" name="params.ip_dest" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="50" displayOrder="1" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="0.0.0.0" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Subnet Mask" name="params.mask" startIncrement="0" type="IpMask" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="50" displayOrder="2" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="0.0.0.0" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Gateway (Optional)" name="params.gateway" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="130" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Distance" name="params.distance" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="9" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="100" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Priority" name="params.priority" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="10" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Optional Comments" name="params.comment" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="5" increment="0" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="dynamic_gateway" name="params.dynamic_gateway" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="virtual-wan-link" name="params.virtual-wan-link" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example>
     <content>config router static
- edit 1
-  set status enable
-  set dst 0.0.0.0 0.0.0.0
-  set gateway 10.31.1.251
-  set distance 1
-  set weight 0
-  set priority 0
-  set device &quot;port1&quot;
-  set comment &apos;&apos;
-  set blackhole disable
-  set dynamic-gateway disable
-  set virtual-wan-link disable
-  set dstaddr &apos;&apos;
-  unset internet-service
-  set internet-service-custom &apos;&apos;
-  set link-monitor-exempt disable
-  set bfd disable
- next
- edit 2
-  set status enable
-  set dst 192.168.1.0 255.255.255.0
-  set gateway 192.168.1.1
-  set distance 10
-  set weight 0
-  set priority 0
-  set device &quot;port1&quot;
-  set comment &quot;testbackupMSA-14560&quot;
-  set blackhole disable
-  set dynamic-gateway disable
-  set virtual-wan-link disable
-  set link-monitor-exempt disable
-  set bfd disable
- next
+    edit 1
+        set status enable
+        set dst 0.0.0.0 0.0.0.0
+        set gateway 81.1.3.1
+        set distance 1
+        set weight 0
+        set priority 0
+        set device &quot;port1&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set dstaddr &apos;&apos;
+        unset internet-service
+        set internet-service-custom &apos;&apos;
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 2
+        set status enable
+        set dst 192.168.1.0 255.255.255.0
+        set gateway 192.168.1.1
+        set distance 10
+        set weight 0
+        set priority 0
+        set device &quot;port1&quot;
+        set comment &quot;testbackupMSA-14560&quot;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 3
+        set status enable
+        set dst 192.168.2.0 255.255.255.0
+        set gateway 192.168.2.1
+        set distance 10
+        set weight 0
+        set priority 0
+        set device &quot;port1&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 5
+        set status enable
+        set dst 192.168.4.0 255.255.255.0
+        set gateway 192.168.4.1
+        set distance 10
+        set weight 0
+        set priority 0
+        set device &quot;port1&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 24
+        set status enable
+        set dst 10.41.41.0 255.255.255.0
+        set gateway 1.1.1.41
+        set distance 10
+        set weight 0
+        set priority 0
+        set device &quot;port2&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 42
+        set status enable
+        set dst 10.42.42.0 255.255.255.0
+        set gateway 1.1.1.42
+        set distance 10
+        set weight 0
+        set priority 0
+        set device &quot;port2&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 43
+        set status enable
+        set dst 10.43.43.0 255.255.255.0
+        set gateway 1.1.1.43
+        set distance 10
+        set weight 0
+        set priority 0
+        set device &quot;port2&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 44
+        set status enable
+        set dst 10.44.44.0 255.255.255.0
+        set gateway 1.1.1.44
+        set distance 10
+        set weight 0
+        set priority 0
+        set device &quot;port2&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 20
+        set status enable
+        set dst 10.20.20.0 255.255.255.0
+        set gateway 1.1.1.20
+        set distance 10
+        set weight 0
+        set priority 0
+        set device &quot;port2&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 45
+        set status enable
+        set dst 10.45.45.0 255.255.255.0
+        set gateway 1.1.1.45
+        set distance 75
+        set weight 0
+        set priority 43
+        set device &quot;port2&quot;
+        set comment &quot;fqdjshlqjfhlqjdfhlqjqdhljqhds&quot;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 46
+        set status enable
+        set dst 0.0.0.0 0.0.0.0
+        set gateway 0.0.0.0
+        set distance 10
+        set weight 0
+        set priority 10
+        set device &quot;port1&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set dstaddr &apos;&apos;
+        unset internet-service
+        set internet-service-custom &apos;&apos;
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 47
+        set status enable
+        set dst 0.0.0.0 0.0.0.0
+        set gateway 0.0.0.0
+        set distance 10
+        set weight 0
+        set priority 10
+        set device &apos;&apos;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set dstaddr &apos;&apos;
+        unset internet-service
+        set internet-service-custom &apos;&apos;
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 13
+        set status enable
+        set dst 10.163.6.216 255.255.255.255
+        set gateway 0.0.0.0
+        set distance 10
+        set weight 0
+        set priority 0
+        set device &apos;&apos;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 48
+        set status enable
+        set dst 0.0.0.0 0.0.0.0
+        set distance 10
+        set weight 0
+        set priority 10
+        set device &quot;Tunnel1&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set dstaddr &apos;&apos;
+        unset internet-service
+        set internet-service-custom &apos;&apos;
+        set link-monitor-exempt disable
+        set bfd disable
+    next
+    edit 1250
+        set status enable
+        set dst 0.0.0.0 0.0.0.0
+        set distance 10
+        set weight 0
+        set priority 10
+        set device &quot;Tunnel12&quot;
+        set comment &apos;&apos;
+        set blackhole disable
+        set dynamic-gateway disable
+        set virtual-wan-link disable
+        set dstaddr &apos;&apos;
+        unset internet-service
+        set internet-service-custom &apos;&apos;
+        set link-monitor-exempt disable
+        set bfd disable
+    next
 end</content>
   </example>
   <command name="CREATE">
     <operation><![CDATA[config router static
 	edit {$params.object_id}
+		{if $params.ip_dest neq ""}
+		set dst {$params.ip_dest} {$params.mask}
+		{else}
+		set dst 0.0.0.0 0.0.0.0
+		{/if}
+		{if $params.distance neq ""}
+		set distance {$params.distance}
+		{else}
+		set distance 100
+		{/if}
+		{if $params.priority neq ""}
+		set priority {$params.priority}
+		{else}
 		set priority 10
+		{/if}
 		set device "{$params.interface}"
+		{if $params.comment neq ""}
+		set comment "{$params.comment}"
+		{/if}
+		{if $params.gateway neq ""}
+        set protocol {$params.gateway}
+    	{/if}
 	next 
 end
 ]]></operation>
@@ -128,6 +358,10 @@ end
           <regexp>@set virtual-wan-link (?&lt;virtual-wan-link&gt;.*)@</regexp>
           <xpath></xpath>
         </line>
+        <line>
+          <regexp>@set distance (?&lt;distance&gt;\d+)@</regexp>
+          <xpath></xpath>
+        </line>
         <ignore>
           <regexp>@set @</regexp>
         </ignore>
@@ -137,10 +371,14 @@ end
   <command name="UPDATE">
     <operation><![CDATA[config router static
 	edit {$params.object_id}
-		set priority 10
+		set dst {$params.ip_dest} {$params.mask}
+		set distance {$params.distance}
+		set priority {$params.priority}
 		set device "{$params.interface}"
+		set comment "{$params.comment}"
 	next 
 end
+
 ]]></operation>
   </command>
   <command name="DELETE">

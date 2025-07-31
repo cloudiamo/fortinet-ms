@@ -29,57 +29,63 @@
     </directoryNames>
   </information>
   <variables frozen="0">
-    <variable displayName="ID" name="params.object_id" startIncrement="0" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="20" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" isCompositeKey="false" isMandatory="true" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="Interface" name="params.srcintf" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="5" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
-      <sections>
-        <sections>Source</sections>
-      </sections>
-      <classes>
-        <class>Fortinet_show_interfaces</class>
-      </classes>
-      <values/>
-    </variable>
-    <variable displayName="IP Address" name="params.srcaddr" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="6" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
-      <sections>
-        <sections>Source</sections>
-      </sections>
-    </variable>
-    <variable displayName="Interface" name="params.dstintf" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="7" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
-      <sections>
-        <sections>Destination</sections>
-      </sections>
-      <classes>
-        <class>IPSec_Setting</class>
-      </classes>
-    </variable>
-    <variable displayName="IP Address" name="params.dstaddr" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
-      <sections>
-        <sections>Destination</sections>
-      </sections>
-    </variable>
-    <variable displayName="Service" name="params.service" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="11" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="Action" name="params.action" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="12" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" isCompositeKey="false" default="accept" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="ID" name="params.object_id" startIncrement="0" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="20" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" isCompositeKey="false" shared="false" isMandatory="true" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Action" name="params.action" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="12" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" isCompositeKey="false" shared="false" default="accept" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <values>
         <values displayValue="DENY">deny</values>
         <values displayValue="ACCEPT">accept</values>
       </values>
     </variable>
-    <variable displayName="Schedule" name="params.schedule" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="always" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="NAT" name="params.nat" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="enable" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+    <variable displayName="Name" name="params.name" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="10" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Network Type" name="params.type" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="|" groupDisplayName="" maxLength="100" displayOrder="11" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <values>
-        <values displayValue="disable">disable</values>
-        <values displayValue="enable">enable</values>
+        <values displayValue="IPV6">ipv6</values>
+        <values displayValue="IPV4">ipv4</values>
       </values>
     </variable>
-    <variable displayName="Optional Comment" name="params.comments" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="17" increment="0" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Interface" name="params.srcintf" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="5" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="any" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Source</sections>
+      </sections>
+      <classes>
+        <class>FortinetShowInterfaces</class>
+      </classes>
+      <values/>
+    </variable>
+    <variable displayName="IP Address" name="params.sources.0.source" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="200" displayOrder="6" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="all" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>FirewallAddress</class>
+        <class>FirewallAddresseGroup</class>
+      </classes>
+    </variable>
+    <variable displayName="Interface" name="params.dstintf" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="7" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="any" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <sections>
+        <sections>Destination</sections>
+      </sections>
+      <classes>
+        <class>IPSecSetting</class>
+      </classes>
+    </variable>
+    <variable displayName="IP Address" name="params.destinations.0.destination" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>FirewallAddresseGroup</class>
+        <class>FirewallAddress</class>
+      </classes>
+    </variable>
+    <variable displayName="Service" name="params.service" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="11" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="ALL" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Schedule" name="params.schedule" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="always" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Optional Comment" name="params.comments" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="17" increment="0" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="true" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="description" name="params.description" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="source" name="params.destinations.0.source" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
   </variables>
   <example>
     <content>config firewall policy
 	edit 7
+		set name &quot;rule 7.1&quot;
 		set srcintf &quot;testVPNNav&quot;
 		set dstintf &quot;port2&quot;
-		set srcaddr &quot;Remote_LAN&quot;
-		set dstaddr &quot;Internal_LAN&quot;
+		set srcaddr &quot;Remote_LAN&quot; &quot;src_sdi&quot;
+		set dstaddr &quot;Internal_LAN&quot; &quot;sdi123&quot;
 		set action accept
 		set schedule &quot;always&quot;
 		set service &quot;ALL&quot;
@@ -87,7 +93,8 @@
 		set comments &quot;VPN incoming policy&quot;
 		set nat disable
 	next
-	edit 6
+	edit 7
+		set name &quot;rule 7.2&quot;
 		set srcintf &quot;port2&quot;
 		set dstintf &quot;testVPNNav&quot;
 		set srcaddr &quot;Internal_LAN&quot;
@@ -159,12 +166,12 @@
 end</content>
   </example>
   <command name="IMPORT">
-    <operation><![CDATA[      config firewall policy##show full-configuration##end    ]]></operation>
+    <operation><![CDATA[      config firewall policy##show full-configuration##end##config firewall policy6##show full-configuration##en   ]]></operation>
     <post_template></post_template>
     <parser>
       <section>
+        <regexp>@set name (?&lt;name&gt;.*)$@</regexp>
         <regexp>@edit (?&lt;object_id&gt;\d+)@</regexp>
-        <xpath></xpath>
       </section>
       <lines>
         <line>
@@ -189,16 +196,6 @@ end</content>
         </line>
         <line>
           <array/>
-          <regexp>@set srcaddr &quot;(?&lt;srcaddr&gt;[^&quot;]+)&quot;@</regexp>
-          <xpath></xpath>
-        </line>
-        <line>
-          <array/>
-          <regexp>@set dstaddr &quot;(?&lt;dstaddr&gt;[^&quot;]+)&quot;@</regexp>
-          <xpath></xpath>
-        </line>
-        <line>
-          <array/>
           <regexp></regexp>
           <xpath></xpath>
         </line>
@@ -214,7 +211,17 @@ end</content>
         </line>
         <line>
           <array/>
-          <regexp>@set comments &quot;(?&lt;comments&gt;[^&quot;]+)&quot;@</regexp>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array/>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array/>
+          <regexp>@set comments &quot;(?&lt;description&gt;[^&quot;]+)&quot;@</regexp>
           <xpath></xpath>
         </line>
         <line>
@@ -237,7 +244,29 @@ end</content>
           <xpath></xpath>
         </line>
         <line>
-          <regexp>@set nat (?&lt;nat&gt;\S+)@</regexp>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set name &quot;(?&lt;name&gt;[^&quot;]+)&quot;@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="sources">
+            <mregexp>@set\s+srcaddr\s+(?&lt;source&gt;((?:&quot;[^&quot;]+&quot;\s*)+))@</mregexp>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <array name="destinations">
+            <mregexp>@set\s+dstaddr\s+(?&lt;destination&gt;((?:&quot;[^&quot;]+&quot;\s*)+))@</mregexp>
+          </array>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
           <xpath></xpath>
         </line>
         <ignore>
@@ -247,40 +276,131 @@ end</content>
     </parser>
   </command>
   <command name="UPDATE">
-    <operation><![CDATA[config firewall policy     
-	edit {$params.object_id}         
-		set srcintf {$params.srcintf}    
-		set dstintf {$params.dstintf}         
-		set srcaddr "{$params.srcaddr}"    
-		set dstaddr "{$params.dstaddr}"         
-		set action {$params.action}         
-		set schedule {$params.schedule}         
-		set service "HTTP" "HTTPS"             
-		set logtraffic all         
-		set nat {$params.nat}    
+    <operation><![CDATA[{if $params.type == "ipv6"}
+	config firewall policy6
+{else}
+	config firewall policy 
+{/if}
+	edit {$params.object_id} 
+		{if $params.name}
+	    	set name "{$params.name}"
+	    {/if}
+	    
+	    {if $params.srcintf}
+			set srcintf "{$params.srcintf}"   
+		{else}
+			set srcintf "any"
+		{/if}
+		
+		{if $params.dstintf}
+			set dstintf "{$params.dstintf}"   
+		{else}
+			set dstintf "any"
+		{/if}
+		
+		{if $params.sources}
+			set srcaddr {foreach $params.sources as $item}"{$item.source}"{if !$item@last} {/if}{/foreach}
+		{else}
+			set srcaddr "all"
+		{/if}
+		
+		{if $params.destinations}
+			set dstaddr {foreach $params.destinations as $item}"{$item.destination}"{if !$item@last} {/if}{/foreach}
+		{else}
+			set dstaddr "all"
+		{/if}
+		
+		{if $params.description}
+			set action {$params.action}
+		{else}
+			set action accept
+		{/if}
+		
+		{if $params.description}
+	    	set comments "{$params.description}"
+	    {/if}
+	    
+	    {if $params.schedule}
+			set schedule "{$params.schedule}"
+		{else}
+			set schedule "always"
+		{/if}
+		
+		{if $params.service}
+			set service "{$params.service}" 
+		{else}
+			set service "ALL"  
+		{/if}
 	next 
-end 
-]]></operation>
+end ]]></operation>
   </command>
   <command name="CONSTRAINT"/>
   <command name="CREATE">
-    <operation><![CDATA[config firewall policy     
-	edit {$params.object_id}         
-		set srcintf {$params.srcintf}    
-		set dstintf Tunnel{$params.dstintf}         
-		set srcaddr "{$params.srcaddr}"    
-		set dstaddr "{$params.dstaddr}"         
-		set action {$params.action}         
-		set schedule {$params.schedule}         
-		set service "HTTP" "HTTPS"             
-		set logtraffic all         
-		set nat {$params.nat}    
+    <operation><![CDATA[{if $params.type == "ipv6"}
+	config firewall policy6
+{else}
+	config firewall policy 
+{/if}
+	edit {$params.object_id} 
+		{if $params.name}
+	    	set name "{$params.name}"
+	    {/if}
+	    
+	    {if $params.srcintf}
+			set srcintf "{$params.srcintf}"   
+		{else}
+			set srcintf "any"
+		{/if}
+		
+		{if $params.dstintf}
+			set dstintf "{$params.dstintf}"   
+		{else}
+			set dstintf "any"
+		{/if}
+		
+		{if $params.sources}
+			set srcaddr {foreach $params.sources as $item}"{$item.source}"{if !$item@last} {/if}{/foreach}
+		{else}
+			set srcaddr "all"
+		{/if}
+		
+		{if $params.destinations}
+			set dstaddr {foreach $params.destinations as $item}"{$item.destination}"{if !$item@last} {/if}{/foreach}
+		{else}
+			set dstaddr "all"
+		{/if}
+		
+		{if $params.description}
+			set action {$params.action}
+		{else}
+			set action accept
+		{/if}
+		
+		{if $params.description}
+	    	set comments "{$params.description}"
+	    {/if}
+	    
+	    {if $params.schedule}
+			set schedule "{$params.schedule}"
+		{else}
+			set schedule "always"
+		{/if}
+		
+		{if $params.service}
+			set service "{$params.service}" 
+		{else}
+			set service "ALL"  
+		{/if}
 	next 
-end 
-]]></operation>
+end ]]></operation>
   </command>
   <command name="DELETE">
-    <operation><![CDATA[config firewall policy
+    <operation><![CDATA[{if $params.version == "ipv4"}
+	config firewall policy     
+{/if}
+{if $params.version == "ipv6"}
+	config firewall policy6   
+{/if}
 	delete {$params.object_id}
 end]]></operation>
   </command>

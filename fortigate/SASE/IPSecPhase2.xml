@@ -31,7 +31,7 @@
   <variables frozen="0">
     <variable displayName="Name" name="params.object_id" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <classes>
-        <class>IPSec_Setting</class>
+        <class>IPSecSetting</class>
       </classes>
     </variable>
     <variable displayName="Key Life Seconds" name="params.keylifeseconds" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" default="7200" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
@@ -130,7 +130,7 @@ end</content>
     <operation><![CDATA[config vpn ipsec phase2-interface     
 	edit "Tunnel{$params.object_id}_phase2"         
 		set phase1name "Tunnel{$params.object_id}"         
-		set proposal aes256gcm aes128gcm aes128-sha1 aes256-sha1         
+		set proposal aes256gcm aes128gcm aes128-sha1 aes256-sha1 
 		set dhgrp 16 15 14         
 		set auto-negotiate enable         
 		set keylifeseconds 7200     

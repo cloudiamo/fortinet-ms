@@ -29,7 +29,7 @@
     </directoryNames>
   </information>
   <variables frozen="0">
-    <variable displayName="ID" name="params.object_id" startIncrement="0" type="AutoIncrement" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="20" displayOrder="0" increment="1" refServiceURI="" keepOnImport="false" editable="true" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" isCompositeKey="false" shared="false" isMandatory="true" isUserLocked="true" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="ID" name="params.object_id" startIncrement="0" type="Integer" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
     <variable displayName="Action" name="params.action" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="12" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" isCompositeKey="false" shared="false" default="accept" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <values>
         <values displayValue="DENY">deny</values>
@@ -338,71 +338,82 @@ end ]]></operation>
   <command name="CREATE">
     <operation><![CDATA[{if $params.type == "ipv6"}
 	config firewall policy6
+		edit {$params.object_id}
+			{if $params.name}
+				set name "ipv6:{$params.name}"
+			{else}
+				set name "ipv6:"
+			{/if}
 {else}
 	config firewall policy 
+		edit {$params.object_id}
+			{if $params.name}
+				set name "ipv4:{$params.name}"
+			{else}
+				set name "ipv4:"
+			{/if}
 {/if}
-	edit {$params.object_id} 
-		{if $params.name}
-	    	set name "{$params.name}"
-	    {/if}
-	    
-	    {if $params.srcintf}
-			set srcintf "{$params.srcintf}"   
-		{else}
-			set srcintf "any"
-		{/if}
-		
-		{if $params.dstintf}
-			set dstintf "{$params.dstintf}"   
-		{else}
-			set dstintf "any"
-		{/if}
-		
-		{if $params.sources}
-			set srcaddr {foreach $params.sources as $item}"{$item.source}"{if !$item@last} {/if}{/foreach}
-		{else}
-			set srcaddr "all"
-		{/if}
-		
-		{if $params.destinations}
-			set dstaddr {foreach $params.destinations as $item}"{$item.destination}"{if !$item@last} {/if}{/foreach}
-		{else}
-			set dstaddr "all"
-		{/if}
-		
-		{if $params.description}
-			set action {$params.action}
-		{else}
-			set action accept
-		{/if}
-		
-		{if $params.description}
-	    	set comments "{$params.description}"
-	    {/if}
-	    
-	    {if $params.schedule}
-			set schedule "{$params.schedule}"
-		{else}
-			set schedule "always"
-		{/if}
-		
-		{if $params.service}
-			set service "{$params.service}" 
-		{else}
-			set service "ALL"  
-		{/if}
+
+	{if $params.srcintf}
+		set srcintf "{$params.srcintf}"   
+	{else}
+		set srcintf "any"
+	{/if}
+	
+	{if $params.dstintf}
+		set dstintf "{$params.dstintf}"   
+	{else}
+		set dstintf "any"
+	{/if}
+	
+	{if $params.sources}
+		set srcaddr {foreach $params.sources as $item}"{$item.source}"{if !$item@last} {/if}{/foreach}
+	{else}
+		set srcaddr "all"
+	{/if}
+	
+	{if $params.destinations}
+		set dstaddr {foreach $params.destinations as $item}"{$item.destination}"{if !$item@last} {/if}{/foreach}
+	{else}
+		set dstaddr "all"
+	{/if}
+	
+	{if $params.action}
+		set action {$params.action}
+	{else}
+		set action accept
+	{/if}
+	
+	{if $params.description}
+		set comments "{$params.description}"
+	{/if}
+	
+	{if $params.schedule}
+		set schedule "{$params.schedule}"
+	{else}
+		set schedule "always"
+	{/if}
+	
+	{if $params.service}
+		set service "{$params.service}" 
+	{else}
+		set service "ALL"  
+	{/if}
 	next 
-end ]]></operation>
+end
+]]></operation>
   </command>
   <command name="DELETE">
-    <operation><![CDATA[{if $params.version == "ipv4"}
-	config firewall policy     
-{/if}
-{if $params.version == "ipv6"}
+    <operation><![CDATA[{assign var="name" value=$FirewallPolicy.{$params.object_id}.name}
+{if $name|strstr:"ipv6:"}
 	config firewall policy6   
+{else}
+	config firewall policy  
 {/if}
 	delete {$params.object_id}
-end]]></operation>
+end
+
+]]></operation>
   </command>
   <command name="READ"/>
   <command name="LIST"/>

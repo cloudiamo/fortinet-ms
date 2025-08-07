@@ -30,7 +30,12 @@
   </information>
   <variables frozen="0">
     <variable displayName="Name" name="params.object_id" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
-    <variable displayName="Description" name="params.description" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default=" " isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="Group Type" name="params.group_type" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="IPv4 group">addrgrp</values>
+        <values displayValue="IPv6 group">addrgrp6</values>
+      </values>
+    </variable>
     <variable displayName="Type" name="params.type" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="grp_ipv4" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <values>
         <values displayValue="IPv4 group">grp_ipv4</values>
@@ -38,16 +43,11 @@
         <values displayValue="FQDN Group">grp_fqdn</values>
       </values>
     </variable>
+    <variable displayName="Description" name="params.description" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default=" " isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
     <variable displayName="member" name="params.members.0.member" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="250" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="type" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
       <classes>
         <class>FirewallAddress</class>
       </classes>
-    </variable>
-    <variable displayName="Group Type" name="params.group_type" startIncrement="0" type="String" mandatoryArray="false" visible="false" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
-      <values>
-        <values displayValue="IPv4 group">addrgrp</values>
-        <values displayValue="IPv6 group">addrgrp6</values>
-      </values>
     </variable>
   </variables>
   <example>
@@ -138,30 +138,35 @@ end</content>
     </parser>
   </command>
   <command name="CREATE">
-    <operation><![CDATA[{if $params.type == "grp_ipv4" ||$params.type == "grp_fqdn"}
-	config firewall addrgrp
-      edit "{$params.object_id}"
-          set member {foreach $params.members as $item}"{$item.member}"{if !$item@last} {/if}{/foreach}
-         
-         {if $params.description}
-		  set comment "{$params.description}"
-		 {/if}
-          
-      next
-	end
-{/if}
-
+    <operation><![CDATA[
 {if $params.type == "grp_ipv6"}
 	config firewall addrgrp6
       edit "{$params.object_id}"
           set member {foreach $params.members as $item}"{$item.member}"{if !$item@last} {/if}{/foreach}
-		 
-		 {if $params.description}
-		  set comment "{$params.description}"
-		 {/if}
-		
+		  
+		  {if $params.description}
+			set comment "addrgrp6: {$params.description}"
+		  {else}
+		    set comment "addrgrp6:"
+		  {/if}
       next
+      
 	end
+{else}
+	config firewall addrgrp
+      edit "{$params.object_id}"
+          set member {foreach $params.members as $item}"{$item.member}"{if !$item@last} {/if}{/foreach}
+		  
+		  {if $params.description}
+			set comment "addrgrp: {$params.description}"
+		  {else}
+		    set comment "addrgrp:"
+		  {/if}
+      
+      next
+      
+	end
+	
 {/if}
 ]]></operation>
   </command>
@@ -195,16 +200,14 @@ end</content>
   </command>
   <command name="CONSTRAINT"/>
   <command name="DELETE">
-    <operation><![CDATA[{if $params.type == "grp_ipv4"}
-	config firewall addrgrp
-	    delete "{$params.object_id}"
-	end
-{/if}
-
-{if $params.type == "grp_ipv6"}
-		config firewall addrgrp6
-	    delete "{$params.object_id}"
-	end
+    <operation><![CDATA[{if $FirewallAddresseGroup.{$params.object_id}.description|strstr:"addrgrp6"}
+    config firewall addrgrp6
+        delete "{$params.object_id}"
+    end
+{else}
+    config firewall addrgrp
+        delete "{$params.object_id}"
+    end
 {/if}
 ]]></operation>
   </command>

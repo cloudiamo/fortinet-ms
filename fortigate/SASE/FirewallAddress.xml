@@ -547,13 +547,12 @@ end</content>
   </command>
   <command name="CONSTRAINT"/>
   <command name="DELETE">
-    <operation><![CDATA[{if $params.type == "cidr_ipv4" ||  $params.type == "fqdn"}
-	config firewall address
+    <operation><![CDATA[{if $params.type == "cidr_ipv6"}
+	config firewall address6
 	    delete "{$params.object_id}"
 	end
-{/if}
-{if $params.version == "cidr_ipv6"}
-	config firewall address6
+{else}
+	config firewall address
 	    delete "{$params.object_id}"
 	end
 {/if}]]></operation>

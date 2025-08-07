@@ -1,0 +1,120 @@
+<ObjectDefinition>
+  <information>
+    <icon>none</icon>
+    <description></description>
+    <displayField>object_id</displayField>
+    <order>0</order>
+    <visibility/>
+    <wfConstraintsPath></wfConstraintsPath>
+    <configType>cli</configType>
+    <createTemplateId></createTemplateId>
+    <createTemplateObject></createTemplateObject>
+    <defaultDisplay>false</defaultDisplay>
+    <dynamic>false</dynamic>
+    <importIfMandatoryPresent>false</importIfMandatoryPresent>
+    <maxInstances>0</maxInstances>
+    <relatedObjects></relatedObjects>
+    <retainIfImportIsEmpty>false</retainIfImportIsEmpty>
+    <name>Dead Gateway Detection</name>
+    <group>SASE</group>
+    <importonce>false</importonce>
+    <importrank>0</importrank>
+    <reorderinstances>false</reorderinstances>
+    <sortascending>false</sortascending>
+    <sortauto>false</sortauto>
+    <sortnumerical>false</sortnumerical>
+    <sortvariable>params._order</sortvariable>
+    <directoryNames>
+      <directoryName>SASE</directoryName>
+    </directoryNames>
+  </information>
+  <variables frozen="0">
+    <variable displayName="Tunnel ID" name="params.object_id" startIncrement="0" type="ObjectRef" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <classes>
+        <class>IPSecSetting</class>
+      </classes>
+    </variable>
+    <variable displayName="detect_server" name="params.detect_server" startIncrement="0" type="IpAddress" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="130" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" isMandatory="false" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false"/>
+    <variable displayName="fail_detect" name="params.fail_detect" startIncrement="0" type="String" mandatoryArray="false" visible="true" description="" groupSeparator="" groupDisplayName="" maxLength="100" displayOrder="0" increment="0" refServiceURI="" keepOnImport="false" editable="false" uniqueItemsInDropDownList="false" onlyDetailView="false" createOnlyView="false" localVarNameMatch="" remoteVarNameMatch="" localVarToFilter="" remoteVarToFilter="" remoteVarValueToFilter="" arrayCanAdd="true" arrayCanRemove="true" arrayCanMove="true" arrayCanEdit="true" arrayMinSizeRequired="false" frozen="false" displayNameHeader="" fullDisplayName="" isCompositeKey="false" shared="false" default="enable" isMandatory="true" isUserLocked="false" isEditLocked="false" isGrouped="false" isSearchable="false" isUniqueGlobal="false">
+      <values>
+        <values displayValue="Enable">enable</values>
+        <values displayValue="Disable">disable</values>
+      </values>
+    </variable>
+  </variables>
+  <example>
+    <content>    edit &quot;vpn_to_pop1&quot;
+        set detectserver &quot;192.168.183.254&quot;
+        set fail-detect enable
+    next
+    edit &quot;vpn_to_pop2&quot;          
+        set detectserver &quot;8.8.8.8&quot;
+        set fail-detect enable
+    next
+end</content>
+  </example>
+  <command name="IMPORT">
+    <operation><![CDATA[config system interface##show full-configuration##end]]></operation>
+    <parser>
+      <section>
+        <regexp>@edit &quot;Tunnel(?&lt;object_id&gt;.*)&quot;@</regexp>
+      </section>
+      <lines>
+        <line>
+          <regexp>@set ip  (?&lt;server_ip&gt;\S+)  (?&lt;server_mask&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp></regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set fail-detect (?&lt;fail_detect&gt;\S+)@</regexp>
+          <xpath></xpath>
+        </line>
+        <line>
+          <regexp>@set detectserver &quot;(?&lt;detect_server&gt;\S+)&quot;@</regexp>
+          <xpath></xpath>
+        </line>
+        <ignore>
+          <regexp>@config@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@next$@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@set@</regexp>
+        </ignore>
+        <ignore>
+          <regexp>@end$@</regexp>
+        </ignore>
+      </lines>
+    </parser>
+  </command>
+  <command name="CREATE">
+    <operation><![CDATA[config system interface
+	edit "Tunnel{$params.object_id}"          
+        set detectserver "{$params.detect_server}"
+        set fail-detect {$params.fail_detect}
+    next
+end]]></operation>
+  </command>
+  <command name="READ"/>
+  <command name="UPDATE">
+    <operation><![CDATA[config system interface
+	edit "Tunnel{$params.object_id}"          
+        set detectserver "{$params.detect_server}"
+        set fail-detect {$params.fail_detect}
+    next
+end]]></operation>
+  </command>
+  <command name="CONSTRAINT"/>
+  <command name="DELETE">
+    <operation><![CDATA[config system interface
+	delete "Tunnel{$params.object_id}"
+end]]></operation>
+  </command>
+  <command name="LIST"/>
+  <displayName>Dead Gateway Detection</displayName>
+  <order>0</order>
+</ObjectDefinition>

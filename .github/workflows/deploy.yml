@@ -56,6 +56,9 @@ jobs:
           tags: "${{ steps.meta.outputs.tags }}"
           labels: ${{ steps.meta.outputs.labels }}
 
+      - name: Set latest commit message as env variable
+        run: echo "LATEST_COMMIT_MESSAGE=$(git log -1 --oneline ${{ github.event.after }} | sed 's/"/\\"/g')" >> $GITHUB_ENV
+
       - name: Notify msa-docker repo about updated ${{ env.CONTAINER_NAME }} Docker image
         uses: benc-uk/workflow-dispatch@v1
         if: github.event_name != 'pull_request'

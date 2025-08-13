@@ -9,6 +9,7 @@ on:
       - master
       - next_release/*
       - release/*
+
 env:
   CONTAINER_NAME: ubiqube/cld-fortinet-ms-installer
 
@@ -57,7 +58,7 @@ jobs:
           labels: ${{ steps.meta.outputs.labels }}
 
       - name: Set latest commit message as env variable
-        run: echo "LATEST_COMMIT_MESSAGE=$(git log -1 --oneline ${{ github.event.after }} | sed 's/"/\\"/g')" >> $GITHUB_ENV
+        run: echo LATEST_COMMIT_MESSAGE=$(git log -1 --oneline ${{ github.event.after }} | jq -Rs .) >> $GITHUB_ENV
 
       - name: Notify msa-docker repo about updated ${{ env.CONTAINER_NAME }} Docker image
         uses: benc-uk/workflow-dispatch@v1
@@ -71,7 +72,8 @@ jobs:
             {
               "image_name": "${{ env.CONTAINER_NAME }}",
               "image_tag": "sha-${{ github.sha }}",
-              "latest_commit_message": "${{ env.LATEST_COMMIT_MESSAGE }}",
+              "latest_commit_message": ${{ env.LATEST_COMMIT_MESSAGE }},
               "team_reviewers": "${{ env.REVIEWERS }}",
               "branch_name": "${{ github.ref_name }}"
             }
+
